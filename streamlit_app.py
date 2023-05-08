@@ -29,6 +29,13 @@ streamlit.write('The user entered ', fruit_choice)
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 
+fruit_choice2 = streamlit.text_input('What fruit would you like to add?','Jackfruit')
+streamlit.write('Thanks for adding ', fruit_choice2)
+
+# allow the end user to adda  fruit to the list
+
+# add_my_fruit = 
+
 # take the json version of the response and normalize it
 
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
