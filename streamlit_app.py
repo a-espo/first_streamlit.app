@@ -45,9 +45,6 @@ except URLError as e:
 
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 
-#don't run anything past here while we troubleshoot
-streamlit.stop()
-
 streamlit.header("The fruit load list contains:")
 #Snowflake-related functions
 def get_fruit_load_list():
